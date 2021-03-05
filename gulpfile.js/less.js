@@ -38,6 +38,7 @@ function lessProd(){
                 prefix(),
                 cssnano()
             ]))
+            .pipe(gcmq())
             .pipe(gulp.dest(config.dest.css));
 }
 
